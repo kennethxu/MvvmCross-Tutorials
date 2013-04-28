@@ -152,15 +152,20 @@
     </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="System" />
-    <Reference Include="System.Windows, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Lib\Mvx\Touch\System.Windows.dll</HintPath>
-    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web.Services" />
+    <Reference Include="System.Missing">
+      <HintPath>..\..\..\Lib\MonoPortable\Touch\System.Missing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net">
+      <HintPath>..\..\..\Lib\MonoPortable\Touch\System.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows">
+      <HintPath>..\..\..\Lib\MonoPortable\Touch\System.Windows.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Serialization">
-      <HintPath>..\..\..\Lib\Mvx\Touch\System.Xml.Serialization.dll</HintPath>
+      <HintPath>..\..\..\Lib\MonoPortable\Touch\System.Xml.Serialization.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
