@@ -202,7 +202,7 @@
       <HintPath>..\..\Lib\MonoPortable\Touch\System.Net.dll</HintPath>
     </Reference>
     <Reference Include="System.Windows">
-\      <HintPath>..\..\Lib\MonoPortable\Touch\System.Windows.dll</HintPath>
+      <HintPath>..\..\Lib\MonoPortable\Touch\System.Windows.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
