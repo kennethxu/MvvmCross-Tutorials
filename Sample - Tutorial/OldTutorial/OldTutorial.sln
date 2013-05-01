@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial.Core", "Tutorial.Core\Tutorial.Core.csproj", "{76521C21-E381-4D58-8281-C59BD78D726A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial.UI.Droid", "Tutorial.UI.Droid\Tutorial.UI.Droid.csproj", "{2AFEDED5-4157-4EF9-8CDF-0A2B6CDBC146}"
@@ -33,7 +33,9 @@ Global
 		{76521C21-E381-4D58-8281-C59BD78D726A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76521C21-E381-4D58-8281-C59BD78D726A}.Debug|ARM.ActiveCfg = Debug|Any CPU
 		{76521C21-E381-4D58-8281-C59BD78D726A}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{76521C21-E381-4D58-8281-C59BD78D726A}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{76521C21-E381-4D58-8281-C59BD78D726A}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{76521C21-E381-4D58-8281-C59BD78D726A}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
 		{76521C21-E381-4D58-8281-C59BD78D726A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
 		{76521C21-E381-4D58-8281-C59BD78D726A}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{76521C21-E381-4D58-8281-C59BD78D726A}.Debug|x64.ActiveCfg = Debug|Any CPU

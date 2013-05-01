@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerManagement.AutoViews.Core", "CustomerManagement\CustomerManagement.AutoViews.Core.csproj", "{46E24189-DA98-4CEC-BD5E-F15480C78355}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerManagement.AutoViews.Droid", "CustomerManagement.Droid\CustomerManagement.AutoViews.Droid.csproj", "{A0A0F1EC-D0F2-4F41-B25C-22B8DBE9CE91}"
@@ -24,7 +24,9 @@ Global
 		{46E24189-DA98-4CEC-BD5E-F15480C78355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{46E24189-DA98-4CEC-BD5E-F15480C78355}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46E24189-DA98-4CEC-BD5E-F15480C78355}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{46E24189-DA98-4CEC-BD5E-F15480C78355}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{46E24189-DA98-4CEC-BD5E-F15480C78355}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{46E24189-DA98-4CEC-BD5E-F15480C78355}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
 		{46E24189-DA98-4CEC-BD5E-F15480C78355}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
 		{46E24189-DA98-4CEC-BD5E-F15480C78355}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{46E24189-DA98-4CEC-BD5E-F15480C78355}.Release|Any CPU.ActiveCfg = Release|Any CPU
