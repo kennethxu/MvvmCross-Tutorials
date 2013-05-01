@@ -81,7 +81,8 @@
       <HintPath>..\..\..\Lib\Mvx\Touch\Cirrious.MvvmCross.Dialog.Touch.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Localization">
-      <HintPath>..\..\..\Lib\Mvx\Portable\Cirrious.MvvmCross.Localization.dll</HintPath>
+      <HintPath Condition="'$(OS)' != 'Windows_NT'">..\..\..\Lib\Mvx\Portable\Profile1\Cirrious.MvvmCross.Localization.dll</HintPath>
+      <HintPath Condition="'$(OS)' == 'Windows_NT'">..\..\..\Lib\Mvx\Portable\Cirrious.MvvmCross.Localization.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Plugins.DownloadCache">
       <HintPath>..\..\..\Lib\Mvx\Touch\Cirrious.MvvmCross.Plugins.DownloadCache.dll</HintPath>
@@ -96,7 +97,8 @@
       <HintPath>..\..\..\Lib\Mvx\Touch\Cirrious.MvvmCross.Plugins.File.Touch.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Plugins.Json">
-      <HintPath>..\..\..\Lib\Mvx\Portable\Cirrious.MvvmCross.Plugins.Json.dll</HintPath>
+      <HintPath Condition="'$(OS)' != 'Windows_NT'">..\..\..\Lib\Mvx\Portable\Profile1\Cirrious.MvvmCross.Plugins.Json.dll</HintPath>
+      <HintPath Condition="'$(OS)' == 'Windows_NT'">..\..\..\Lib\Mvx\Portable\Cirrious.MvvmCross.Plugins.Json.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Plugins.Location">
       <HintPath>..\..\..\Lib\Mvx\Touch\Cirrious.MvvmCross.Plugins.Location.dll</HintPath>

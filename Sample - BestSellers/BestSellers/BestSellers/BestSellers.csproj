@@ -11,7 +11,8 @@
     <RootNamespace>BestSellers</RootNamespace>
     <AssemblyName>BestSellers</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Profile104</TargetFrameworkProfile>
+    <TargetFrameworkProfile Condition="'$(OS)' != 'Windows_NT'">Profile1</TargetFrameworkProfile>
+    <TargetFrameworkProfile Condition="'$(OS)' == 'Windows_NT'">Profile104</TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
@@ -32,10 +33,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore">
-      <HintPath>..\..\..\Lib\Mvx\Portable\Cirrious.CrossCore.dll</HintPath>
+      <HintPath Condition="'$(OS)' != 'Windows_NT'">..\..\..\Lib\Mvx\Portable\Profile1\$(PortableProfile)Cirrious.CrossCore.dll</HintPath>
+      <HintPath Condition="'$(OS)' == 'Windows_NT'">..\..\..\Lib\Mvx\Portable\$(PortableProfile)Cirrious.CrossCore.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross">
-      <HintPath>..\..\..\Lib\Mvx\Portable\Cirrious.MvvmCross.dll</HintPath>
+      <HintPath Condition="'$(OS)' != 'Windows_NT'">..\..\..\Lib\Mvx\Portable\Profile1\$(PortableProfile)Cirrious.MvvmCross.dll</HintPath>
+      <HintPath Condition="'$(OS)' == 'Windows_NT'">..\..\..\Lib\Mvx\Portable\$(PortableProfile)Cirrious.MvvmCross.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

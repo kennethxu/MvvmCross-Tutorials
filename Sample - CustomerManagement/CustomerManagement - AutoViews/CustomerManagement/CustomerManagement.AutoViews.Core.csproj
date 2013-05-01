@@ -9,7 +9,8 @@
     <RootNamespace>CustomerManagement.AutoViews.Core</RootNamespace>
     <AssemblyName>CustomerManagement.AutoViews.Core</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Profile104</TargetFrameworkProfile>
+    <TargetFrameworkProfile Condition="'$(OS)' != 'Windows_NT'">Profile1</TargetFrameworkProfile>
+    <TargetFrameworkProfile Condition="'$(OS)' == 'Windows_NT'">Profile104</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <ProductVersion>10.0.0</ProductVersion>
@@ -34,37 +35,48 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Cirrious.CrossCore">
-      <HintPath>..\..\..\Lib\Mvx\Portable\Cirrious.CrossCore.dll</HintPath>
+      <HintPath Condition="'$(OS)' != 'Windows_NT'">..\..\..\Lib\Mvx\Portable\Profile1\Cirrious.CrossCore.dll</HintPath>
+      <HintPath Condition="'$(OS)' == 'Windows_NT'">..\..\..\Lib\Mvx\Portable\Cirrious.CrossCore.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross">
-      <HintPath>..\..\..\Lib\Mvx\Portable\Cirrious.MvvmCross.dll</HintPath>
+      <HintPath Condition="'$(OS)' != 'Windows_NT'">..\..\..\Lib\Mvx\Portable\Profile1\Cirrious.MvvmCross.dll</HintPath>
+      <HintPath Condition="'$(OS)' == 'Windows_NT'">..\..\..\Lib\Mvx\Portable\Cirrious.MvvmCross.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.AutoView">
-      <HintPath>..\..\..\Lib\Mvx\Portable\Cirrious.MvvmCross.AutoView.dll</HintPath>
+      <HintPath Condition="'$(OS)' != 'Windows_NT'">..\..\..\Lib\Mvx\Portable\Profile1\Cirrious.MvvmCross.AutoView.dll</HintPath>
+      <HintPath Condition="'$(OS)' == 'Windows_NT'">..\..\..\Lib\Mvx\Portable\Cirrious.MvvmCross.AutoView.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Binding">
-      <HintPath>..\..\..\Lib\Mvx\Portable\Cirrious.MvvmCross.Binding.dll</HintPath>
+      <HintPath Condition="'$(OS)' != 'Windows_NT'">..\..\..\Lib\Mvx\Portable\Profile1\Cirrious.MvvmCross.Binding.dll</HintPath>
+      <HintPath Condition="'$(OS)' == 'Windows_NT'">..\..\..\Lib\Mvx\Portable\Cirrious.MvvmCross.Binding.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Localization">
-      <HintPath>..\..\..\Lib\Mvx\Portable\Cirrious.MvvmCross.Localization.dll</HintPath>
+      <HintPath Condition="'$(OS)' != 'Windows_NT'">..\..\..\Lib\Mvx\Portable\Profile1\Cirrious.MvvmCross.Localization.dll</HintPath>
+      <HintPath Condition="'$(OS)' == 'Windows_NT'">..\..\..\Lib\Mvx\Portable\Cirrious.MvvmCross.Localization.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Plugins.File">
-      <HintPath>..\..\..\Lib\Mvx\Portable\Cirrious.MvvmCross.Plugins.File.dll</HintPath>
+      <HintPath Condition="'$(OS)' != 'Windows_NT'">..\..\..\Lib\Mvx\Portable\Profile1\Cirrious.MvvmCross.Plugins.File.dll</HintPath>
+      <HintPath Condition="'$(OS)' == 'Windows_NT'">..\..\..\Lib\Mvx\Portable\Cirrious.MvvmCross.Plugins.File.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Plugins.Json">
-      <HintPath>..\..\..\Lib\Mvx\Portable\Cirrious.MvvmCross.Plugins.Json.dll</HintPath>
+      <HintPath Condition="'$(OS)' != 'Windows_NT'">..\..\..\Lib\Mvx\Portable\Profile1\Cirrious.MvvmCross.Plugins.Json.dll</HintPath>
+      <HintPath Condition="'$(OS)' == 'Windows_NT'">..\..\..\Lib\Mvx\Portable\Cirrious.MvvmCross.Plugins.Json.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Plugins.PhoneCall">
-      <HintPath>..\..\..\Lib\Mvx\Portable\Cirrious.MvvmCross.Plugins.PhoneCall.dll</HintPath>
+      <HintPath Condition="'$(OS)' != 'Windows_NT'">..\..\..\Lib\Mvx\Portable\Profile1\Cirrious.MvvmCross.Plugins.PhoneCall.dll</HintPath>
+      <HintPath Condition="'$(OS)' == 'Windows_NT'">..\..\..\Lib\Mvx\Portable\Cirrious.MvvmCross.Plugins.PhoneCall.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Plugins.ResourceLoader">
-      <HintPath>..\..\..\Lib\Mvx\Portable\Cirrious.MvvmCross.Plugins.ResourceLoader.dll</HintPath>
+      <HintPath Condition="'$(OS)' != 'Windows_NT'">..\..\..\Lib\Mvx\Portable\Profile1\Cirrious.MvvmCross.Plugins.ResourceLoader.dll</HintPath>
+      <HintPath Condition="'$(OS)' == 'Windows_NT'">..\..\..\Lib\Mvx\Portable\Cirrious.MvvmCross.Plugins.ResourceLoader.dll</HintPath>
     </Reference>
     <Reference Include="Cirrious.MvvmCross.Plugins.WebBrowser">
-      <HintPath>..\..\..\Lib\Mvx\Portable\Cirrious.MvvmCross.Plugins.WebBrowser.dll</HintPath>
+      <HintPath Condition="'$(OS)' != 'Windows_NT'">..\..\..\Lib\Mvx\Portable\Profile1\Cirrious.MvvmCross.Plugins.WebBrowser.dll</HintPath>
+      <HintPath Condition="'$(OS)' == 'Windows_NT'">..\..\..\Lib\Mvx\Portable\Cirrious.MvvmCross.Plugins.WebBrowser.dll</HintPath>
     </Reference>
     <Reference Include="CrossUI.Core">
-      <HintPath>..\..\..\Lib\Mvx\Portable\CrossUI.Core.dll</HintPath>
+      <HintPath Condition="'$(OS)' != 'Windows_NT'">..\..\..\Lib\Mvx\Portable\Profile1\CrossUI.Core.dll</HintPath>
+      <HintPath Condition="'$(OS)' == 'Windows_NT'">..\..\..\Lib\Mvx\Portable\CrossUI.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

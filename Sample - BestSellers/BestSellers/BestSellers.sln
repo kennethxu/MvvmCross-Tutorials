@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestSellers", "BestSellers\BestSellers.csproj", "{4122B007-1BA3-43AC-B123-54C2595A5D24}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestSellers.Droid", "BestSellers.Droid\BestSellers.Droid.csproj", "{6AB65A58-4958-4377-821A-107F65D66110}"
@@ -24,13 +24,17 @@ Global
 		{4122B007-1BA3-43AC-B123-54C2595A5D24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4122B007-1BA3-43AC-B123-54C2595A5D24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4122B007-1BA3-43AC-B123-54C2595A5D24}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{4122B007-1BA3-43AC-B123-54C2595A5D24}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{4122B007-1BA3-43AC-B123-54C2595A5D24}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{4122B007-1BA3-43AC-B123-54C2595A5D24}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
 		{4122B007-1BA3-43AC-B123-54C2595A5D24}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
 		{4122B007-1BA3-43AC-B123-54C2595A5D24}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{4122B007-1BA3-43AC-B123-54C2595A5D24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4122B007-1BA3-43AC-B123-54C2595A5D24}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4122B007-1BA3-43AC-B123-54C2595A5D24}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{4122B007-1BA3-43AC-B123-54C2595A5D24}.Release|iPhone.Build.0 = Release|Any CPU
 		{4122B007-1BA3-43AC-B123-54C2595A5D24}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{4122B007-1BA3-43AC-B123-54C2595A5D24}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{4122B007-1BA3-43AC-B123-54C2595A5D24}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{4122B007-1BA3-43AC-B123-54C2595A5D24}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{6AB65A58-4958-4377-821A-107F65D66110}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -82,5 +86,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = BestSellers\BestSellers.csproj
 	EndGlobalSection
 EndGlobal
